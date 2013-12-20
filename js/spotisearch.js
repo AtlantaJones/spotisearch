@@ -8,6 +8,8 @@
     var $inputYearStart =    $('#yearStart');
     var $inputYearEnd =     $('#yearEnd');
     var $inputArtist =          $('#artist');
+    var $inputTrack =          $('#track');
+    var $inputAlbum =          $('#album');
     var $inputGenre =           $('#genre');
     var $ssResult =             $('#ssResult');
 
@@ -25,16 +27,24 @@
 
     var processArtist = function() {
         var output = 'artist:"' + $inputArtist.val() + '"';
-
-
         return output + ' ';
     }
 
 
     var processGenre = function() {
         var output = 'genre:"' + $inputGenre.val() + '"';
+        return output + ' ';
+    }
 
 
+    var processTrack = function() {
+        var output = 'track:"' + $inputTrack.val() + '"';
+        return output + ' ';
+    }
+
+
+    var processAlbum = function() {
+        var output = 'album:"' + $inputAlbum.val() + '"';
         return output + ' ';
     }
 
@@ -60,6 +70,14 @@
 
             if($inputGenre.val() !== '') {
                 ssQuery += processGenre();
+            }
+
+            if($inputTrack.val() !== '') {
+                ssQuery += processTrack();
+            }
+
+            if($inputAlbum.val() !== '') {
+                ssQuery += processAlbum();
             }
 
             $ssResult.html(ssQuery);
