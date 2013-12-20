@@ -1,0 +1,19 @@
+// -------------------------------------
+//   Base
+// -------------------------------------
+// ----- Base-level tags (body, p, etc.)
+// -------------------------------------
+
+body {
+    font-family: "Lucida Grande", Arial, sans-serif;
+}
+
+h1 {
+    color:#fff;
+    font-size: convert-to-em(24);
+    font-family: "Lucida Grande", Arial, sans-serif;
+    color: rgb( 255, 255, 255 );
+    font-weight: bold; 
+    text-shadow: 1px 1.732px 0px rgb( 0, 0, 0 );
+
+}

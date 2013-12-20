@@ -1,0 +1,115 @@
+// css-burrito v1.0 | MIT License | github.com/jasonreece/css-burrito
+
+// -------------------------------------
+//   Application.css.scss
+// -------------------------------------
+// ----- Contains an import section for libraries, core, and modules, the inbox,
+// ----- and a shame section for quick fixes and hacks
+
+// -------------------------------------
+//   Libraries
+// -------------------------------------
+
+// ----- Reset - Normalize.css ----- //
+@import "libs/normalize";
+
+// ----- Variable overrides for Bootstrap and other libraries ----- //
+@import "libs/library-variable-overrides";
+
+// ----- Bootstrap - Recommended Version: https://github.com/thomas-mcdonald/bootstrap-sass ----- //
+// @import "bootstrap";
+// @import "bootstrap-responsive";
+
+// ----- Compass - Setup: http://compass-style.org/help/
+// ----- Run compass create on project root 
+// ----- Delete generated ie, print, and screen files  
+// ----- Update paths on config.rb ----- //
+// @import "compass";
+
+
+
+// -------------------------------------
+//   Foundation
+// -------------------------------------
+
+// This includes all of the foundation global elements that are needed to work with any of the other files.
+@import "foundation/variables";
+
+// Foundation Components
+@import
+  "foundation/components/global",
+  "foundation/components/grid-5",
+  // "foundation/components/visibility",
+  // "foundation/components/block-grid",
+  // "foundation/components/type",
+  "foundation/components/buttons",
+  "foundation/components/forms",
+  // "foundation/components/button-groups",
+  // "foundation/components/dropdown-buttons",
+  // "foundation/components/split-buttons",
+  // "foundation/components/flex-video",
+  // "foundation/components/section",
+  // "foundation/components/top-bar",
+  // "foundation/components/orbit",
+  // "foundation/components/reveal",
+  // "foundation/components/joyride",
+  // "foundation/components/clearing",
+  // "foundation/components/alert-boxes",
+  // "foundation/components/breadcrumbs",
+  // "foundation/components/custom-forms",
+  // "foundation/components/keystrokes",
+  "foundation/components/labels",
+  // "foundation/components/inline-lists",
+  // "foundation/components/pagination",
+  "foundation/components/panels",
+  // "foundation/components/pricing-tables",
+  // "foundation/components/progress-bars",
+  // "foundation/components/side-nav",
+  // "foundation/components/sub-nav",
+  // "foundation/components/switch",
+  // "foundation/components/magellan",
+  "foundation/components/tables";
+  // "foundation/components/thumbs",
+  // "foundation/components/tooltips",
+  // "foundation/components/dropdown";
+
+
+// -------------------------------------
+//   Core
+// -------------------------------------
+
+// ----- Settings - @Font-Face Declarations, Variables ----- //
+@import "core/settings";
+
+// ----- Helpers - Extends, Functions, and Mixins ----- //
+@import "core/helpers";
+
+// ----- Base - Base-level tags (body, p, etc.) ----- //
+@import "core/base";
+
+// ----- Typography - Fonts and Colors ----- //
+@import "core/typography";
+
+// ----- Layout - Margin, Padding, Sizing ----- //
+@import "core/layout";
+
+
+
+
+// -------------------------------------
+//   Modules
+// -------------------------------------
+@import "modules/example-module";
+
+
+// -------------------------------------
+//   Inbox 
+// -------------------------------------
+// ----- The inbox allows developers, and those not actively working on the CSS, 
+// to quickly add styles that are easily seen by the maintainer of the file.
+
+
+// -------------------------------------
+//   Shame 
+// -------------------------------------
+// ----- Need to add a quick fix, hack, or questionable technique?  Add it here, fix it later.
