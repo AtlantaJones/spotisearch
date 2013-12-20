@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpotiSearch: Advanced Search for Spotify</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.min.css">
+    <link rel="stylesheet" href="css/spotisearch.css">
+</head>
+<body>
+    
+    <h1>SpotiSearch</h1>
+    <h2>Advanced Search for Spotify</h2>
+    
+    <form action="" class="form-group" id="ssForm">
+        
+        <fieldset>
+            <label for="yearStart">Year</label>
+            <input type="text" class="form-control" id="yearStart" name="yearStart" placeholder="Enter Year (YYYY)">
+
+            <label for="yearEnd">End Year (if searching date ranges)</label>
+            <input type="text" class="form-control" id="yearEnd" name="yearEnd" placeholder="Enter Year (YYYY)">
+        </fieldset>
+
+
+        <fieldset>
+            <label for="artist">Artist</label>
+            <input type="text" class="form-control" id="artist" name="artist" placeholder="Enter Full Artist Name">
+        </fieldset>
+
+        <fieldset>
+            <label for="track">Track</label>
+            <input type="text" class="form-control" id="track" name="track" placeholder="Track Name">
+        </fieldset>
+
+        <fieldset>
+            <label for="album">Album</label>
+            <input type="text" class="form-control" id="album" name="album" placeholder="Album Name">
+        </fieldset>
+
+
+        <fieldset>
+            <label for="genre">Genre (start typing a genre name)</label>
+            <input type="text" class="form-control" id="genre" name="genre" placeholder="Enter Genre">
+        </fieldset>
+
+
+    <button type="submit" class="btn btn-default">Generate Search Query</button>
+
+    </form>
+
+    <h3>Your Search Query:</h3>
+    <div id="ssResult" class="well"></div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/genres.js"></script>
+<script src="js/spotisearch.js"></script>
+</body>
+</html>
