@@ -26,25 +26,25 @@
 
 
     var processArtist = function() {
-        var output = 'artist:"' + $inputArtist.val() + '"';
+        var output = "artist:'" + $inputArtist.val() + "'";
         return output + ' ';
     }
 
 
     var processGenre = function() {
-        var output = 'genre:"' + $inputGenre.val() + '"';
+        var output = "genre:'" + $inputGenre.val() + "'";
         return output + ' ';
     }
 
 
     var processTrack = function() {
-        var output = 'track:"' + $inputTrack.val() + '"';
+        var output = "track:'" + $inputTrack.val() + "'";
         return output + ' ';
     }
 
 
     var processAlbum = function() {
-        var output = 'album:"' + $inputAlbum.val() + '"';
+        var output = "album:'" + $inputAlbum.val() + "'";
         return output + ' ';
     }
 
@@ -81,6 +81,20 @@
             }
 
             $ssResult.html(ssQuery);
+
+
+            // create links
+            var link1 = 'https://play.spotify.com/search/' + ssQuery;
+            var link2 = 'spotify:search:' + ssQuery;
+
+            var linkHtml = '<a href="' + link1 + '">Web Link</a>';
+            linkHtml +=     '<a href="' + link2 + '">Spotify Link</a>';
+
+            $('#ssLinks').html(linkHtml);
+
+            //https://play.spotify.com/search/
+            //self.location = 'spotify:search:' + ssQuery;
+
 
         });
 
